@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #E4F3E1, #CDECC9, #A5D7A1, #6DA976);
+    color: #053b34;
+    direction: rtl;
+  }
+  
+  html[lang="en"] body {
+    direction: ltr;
+    text-align: left;
+  }
+  
+  a {
+    color: #1e3b2d;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+    color: #1e3b2d;
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+  
+  h1:hover {
+    color: #ffffff;
+    background-color: #324D3E;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(50, 77, 62, 0.4);
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    color: #324D3E;
+    margin-bottom: 1.5em;
+  }
+  
+  section {
+    margin-bottom: 2em;
+  }
+  
+  section h2 {
+    border-bottom: 1px solid #1B3A2A; /* الأخضر الغامق */
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    padding-left: 1.2em;
+  }
+  
+  .lang-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .lang-toggle a {
+    background: #324D3E;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .lang-toggle a:hover {
+    background: #1e3b2d;
+    transform: scale(1.05);
+  }
+  
+  .projects li {
+    transition: background-color 0.3s, color 0.3s;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .projects li:hover {
+    background-color: #BECFBB;
+    color: #000;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #324D3E;
+    padding: 20px 10px;
+    background-color: #D9E4D7;
+    border-top: 1px solid #BECFBB;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    .lang-toggle a {
+      padding: 6px 14px;
+      font-size: 14px;
+    }
+  }
